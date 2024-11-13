@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+li{
+  @apply px-2 text-white;
+}
+
+.nav{
+  background-color: rgb(85, 81, 227);
+}
+.mv{
+  @apply fixed left-0 top-11 bg-gray-600 w-full h-1/4;
+}
+.mv li{
+  @apply w-full h-full text-center border-b-2;
+}
+
+/*Hero Section*/
+.sec{
+  background-color: #2b2d77;
+}
+.icon a{
+  @apply px-2 hover:text-white;
+}
+
+/*About section*/
+.sec1{
+  background-color: #2b2d77;
+}
