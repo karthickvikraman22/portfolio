@@ -1,6 +1,6 @@
 export default function Footer(){
     return <>
-       <section className="pt-10 sec">
+       <section className="pt-10 sec" id='contact'>
            <div className="py-10 flex flex-col">
               <p className="w-full text-center text-2xl">Contact us</p>
               <div className="pt-5">

@@ -11,7 +11,7 @@ li{
 }
 
 .nav{
-  background-color: rgb(85, 81, 227);
+  background-color: green;
 }
 .mv{
   @apply fixed left-0 top-10 bg-gray-800 w-full h-[30%];
@@ -22,10 +22,10 @@ li{
 
 /*Hero Section*/
 .sec{
-  background-color: #2b2d77;
+  background-color: rgb(85, 81, 227);
 }
 .icon a{
-  @apply px-2 hover:text-white;
+  @apply px-2 hover:text-green-800;
 }
 
 /*Project section*/
@@ -57,6 +57,9 @@ li{
 }
 .percent{
   @apply font-hero-font text-sm text-white;
+}
+.heading1{
+  @apply font-hero-font text-sm;
 }
 
 /*Resume Section*/

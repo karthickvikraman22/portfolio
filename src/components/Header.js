@@ -12,16 +12,16 @@ export default function Header(){
             <li><a href='#skill'>Skills</a></li>
             <li><a href='#pro'>Projects</a></li>
             <li><a href='#res'>Resume</a></li>
-            <li><a href='index.html'>Contact</a></li>
+            <li><a href='#contact'>Contact</a></li>
             </ul>
          </nav>
          {toggle && <nav className='block md:hidden'>
                         <ul onClick={()=>setToggle(!toggle)} className='flex flex-col mv'>
-                            <li><a href='./'>Home</a></li>
+                            <li><a href='/'>Home</a></li>
                             <li><a href='#skill'>Skills</a></li>
                             <li><a href='#pro'>Projects</a></li>
                             <li><a href='#res'>Resume</a></li>
-                            <li><a href='index.html'>Contact</a></li>
+                            <li><a href='#contact'>Contact</a></li>
                         </ul>
                     </nav>
          }
