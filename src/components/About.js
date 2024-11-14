@@ -2,9 +2,9 @@ import AboutImg from '../assets/about.png'
 
 export default function About(){
     return <>
-      <section className='flex flex-col md:flex-row md:justify-center px-5 sec1'>
+      <section className='flex flex-col md:flex-row md:justify-center px-5 sec pt-10'>
         <img className="w-1/2 hidden md:block" src={AboutImg} alt="about"></img>
-        <div className='w-1/2 font-hero-font flex justify-start md:justify-center'>
+        <div className='w-full md:w-1/2 font-hero-font flex justify-start md:justify-center'>
            <div className='flex flex-col justify-center'>
             <h1 className='text-4xl border-b-2 border-black w-[160px] font-bold'>About me</h1>
             <div className='text-white text-2xl pt-8'>
