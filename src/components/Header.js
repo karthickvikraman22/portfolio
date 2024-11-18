@@ -4,24 +4,24 @@ import { useState } from 'react';
 export default function Header(){
     const [toggle,setToggle]=useState(false);
     return <>
-    <header className="flex px-5 py-2 nav fixed w-full z-50">
-        <h1 className="font-bold text-black pr-5">Karthickvikraman</h1>
+    <header className="flex w-full p-2 fixed bg z-50">
+        <h1 className="font-bold pl-5 pr-10 text-black">Karthickvikraman</h1>
          <nav className="hidden md:block">
             <ul className="flex">
-            <li><a href='/'>Home</a></li>
-            <li><a href='#skill'>Skills</a></li>
-            <li><a href='#pro'>Projects</a></li>
-            <li><a href='#res'>Resume</a></li>
-            <li><a href='#contact'>Contact</a></li>
+                <li><a href="/" className="co">Home</a></li>
+                <li><a href="#skill" className='co'>Skills</a></li>
+                <li><a href="#pro" className='co'>Projects</a></li>
+                <li><a href="#res" className='co'>Resume</a></li>
+                <li><a href="#contact"className='co'>Contact</a></li>
             </ul>
          </nav>
          {toggle && <nav className='block md:hidden'>
                         <ul onClick={()=>setToggle(!toggle)} className='flex flex-col mv'>
-                            <li><a href='/'>Home</a></li>
-                            <li><a href='#skill'>Skills</a></li>
-                            <li><a href='#pro'>Projects</a></li>
-                            <li><a href='#res'>Resume</a></li>
-                            <li><a href='#contact'>Contact</a></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="#skill">Skills</a></li>
+                            <li><a href="#pro">Projects</a></li>
+                            <li><a href="#res">Resume</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
          }

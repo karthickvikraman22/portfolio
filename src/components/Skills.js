@@ -1,8 +1,8 @@
 export default function Skills(){
     return<>
-       <section className="pt-10 px-5 flex flex-col sec" id='skill' >
+       <section className="mt-20 px-5 flex flex-col" id='skill' >
            <div className="md:px-20">
-                   <h1 className="text-4xl font-hero-font border-black border-b-2 w-[100px]">Skills</h1>
+                   <h1 className="text-4xl text-white font-hero-font border-white border-b-2 w-[100px] bc">Skills</h1>
            </div>
            <div className="w-full grid grid-cols-2 grid-rows-4 md:grid-cols-3 md:grid-rows-3 gap-8 mt-14 px-5 md:px-20">
                     <div>
