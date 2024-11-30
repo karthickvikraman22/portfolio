@@ -7,10 +7,11 @@ export default function About(){
         <div className='w-full md:w-1/2 font-hero-font flex justify-start md:justify-center'>
            <div className='flex flex-col justify-center'>
             <h1 className='text-4xl border-b-2 border-white w-[160px] font-bold text-white bc'>About me</h1>
-            <div className='text-white text-2xl pt-8'>
+            <div className='text-left text-white text-2xl pt-8'>
                 <p>My name is Karthickvikraman.I am fresher and built a beautiful website with React.js and tailwind CSS.</p>
-                <p className='pt-5'>I am proficient in Frontend Technologies such as CSS,JavaScript,React.js and Tailwind CSS.</p>
-                <p className='pt-5'>In Backend, I know Express.js,Servlet,JDBC and MySQL.</p>
+                <p className='pt-5'>I am proficient in Frontend Technologies such as CSS, JavaScript, React.js and Tailwind CSS.</p>
+                <p className='pt-5'>In Backend, I know Express.js, Servlet, JDBC and Mongo Db.</p>
+                <p className='pt-5'>View my resume<button className='ml-2 text-sm download'>Download</button></p>
             </div>
            </div>
         </div>

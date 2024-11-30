@@ -1,12 +1,12 @@
 export default function Footer(){
     return <>
-       <section className="mt-10 bg-gray-800" id='contact'>
+       <section className="mt-10 bg" id='contact'>
            <div className="py-10 flex flex-col">
-              <p className="w-full text-white text-center text-2xl bc">Contact us</p>
+              <p className="w-full text-black text-center text-2xl">Contact us</p>
               <div className="pt-5">
-                <p className="w-full text-center bc">Email:<span className="text-white">vikramkarthick5@gmail.com</span></p>
-                <div className="pt-5">
-                   <p className="w-full text-center bc">phone:<span className="text-white">+91 8870735257</span></p>
+                <p className="w-full text-center text-black">vikramkarthick5@gmail.com</p>
+                <div className="">
+                   <p className="w-full text-center text-black">+91 8870735257</p>
                 </div>
               </div>
            </div>

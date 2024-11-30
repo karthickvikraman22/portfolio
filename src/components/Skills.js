@@ -52,7 +52,7 @@ export default function Skills(){
                     </div>
                     <div>
                         <div className="flex justify-between">
-                            <h3 className="heading1 text-white">MySQL</h3>    
+                            <h3 className="heading1 text-white">Mongo Db</h3>    
                             <p className="percent">85%</p>
                         </div>
                         <div className="bar">

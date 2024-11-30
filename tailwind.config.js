@@ -8,7 +8,7 @@ module.exports = {
       },
     },
     fontFamily:{
-      'hero-font':'Sriracha',
+      'hero-font':'Roboto',
     },
   },
   plugins: [],

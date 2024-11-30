@@ -9,18 +9,18 @@ export default function Header(){
          <nav className="hidden md:block">
             <ul className="flex">
                 <li><a href="/" className="co">Home</a></li>
+                <li><a href="#edu" className='co'>Eduation</a></li>
                 <li><a href="#skill" className='co'>Skills</a></li>
                 <li><a href="#pro" className='co'>Projects</a></li>
-                <li><a href="#res" className='co'>Resume</a></li>
                 <li><a href="#contact"className='co'>Contact</a></li>
             </ul>
          </nav>
          {toggle && <nav className='block md:hidden'>
                         <ul onClick={()=>setToggle(!toggle)} className='flex flex-col mv'>
                             <li><a href="/">Home</a></li>
+                            <li><a href="#edu">Education</a></li>
                             <li><a href="#skill">Skills</a></li>
                             <li><a href="#pro">Projects</a></li>
-                            <li><a href="#res">Resume</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
