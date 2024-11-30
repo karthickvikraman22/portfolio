@@ -22,13 +22,6 @@ html{
 .bc{
   color: aqua;
 }
-.mv{
-  @apply fixed left-0 top-10 bg-gray-800 w-full h-[30%];
-}
-.mv li{
-  @apply w-full h-full text-center border-b-2;
-  color:aqua;
-}
 
 /*Hero Section*/
 .icon a{
