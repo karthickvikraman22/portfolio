@@ -27,7 +27,7 @@ html{
 .icon a{
   @apply px-2;
 }
-.icon a:hover{
+.icon button:hover{
   color: aqua;
 }
 
@@ -41,12 +41,12 @@ html{
   @apply font-hero-font text-2xl text-center;
 }
 .des{
-  @apply font-hero-font w-full h-full absolute opacity-0 hover:opacity-100 hover:scale-110 hover:transition-transform hover:ease-out  hover:duration-500;
+  @apply p-4 font-hero-font w-full h-full absolute opacity-0 hover:opacity-100 hover:scale-110 hover:transition-transform hover:ease-out  hover:duration-500;
   border-radius: 4px;
   background: linear-gradient(135deg, #8ac6ce , #ffffff);
 }
 .detail{
-  @apply text-black text-xl font-hero-font text-center;
+  @apply text-black text-xl font-hero-font text-left;
 }
 
 /*Skills section*/
@@ -71,6 +71,9 @@ html{
   padding: 2px;
   border-radius: 2px;
   color:#8ac6ce;
+}
+.download:hover{
+  text-decoration: underline;
 }
 .edu{
   @apply flex flex-col justify-between mt-[50px] w-[400px] h-[100px] rounded border border-white p-2;

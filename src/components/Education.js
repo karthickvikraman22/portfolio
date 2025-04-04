@@ -1,37 +1,43 @@
-export default function Education(){
-    return<>
-      <section className="mt-10" id="edu">
-           <div className="md:px-20 my-5 mx-5">
-             <p className="text-4xl border-b-2 border-white w-[165px] font-bold font-hero-font bc">Education</p>
-           </div>
-           <div className="flex flex-col mx-20 md:mx-28 mt-10 h-[450px] border-l">
-               <div className="flex">
-                  <p className="ml-2 mt-[93px] text-white text-xs font-hero-font">2024</p>
-                  <div className="ml-2 mt-[100px] border-t w-[100px] border-white"></div>
-                  <div className="edu">
-                     <p className="font-hero-font text-lg text-white">GCE-Tirunelveli<br/><span className="text-sm text-white font-hero-font">BE-CSE</span></p>
-                     <p className="text-sm font-hero-font text-white">Percenage-83</p>
-                  </div>
-               </div>
+function Education() {
 
-               <div className="flex">
-                  <p className="ml-2 mt-[93px] text-white text-xs font-hero-font">2020</p>
-                  <div className="ml-2 mt-[100px] border-t w-[100px] border-white"></div>
-                  <div className="edu">
-                    <p className="font-hero-font text-lg text-white">KA Hr. Sec. School<br/><span className="text-sm text-white font-hero-font">HSC</span></p>
-                    <p className="text-sm font-hero-font text-white">Percenage-82.5</p>
-                  </div>
-               </div>
+  const education = [{
+    schoolName: "GCE-Tirunelveli",
+    year: "2024",
+    course: "BE-CSE",
+    percent: "83"
+  },
+  {
+    schoolName: "KA Hr. Sec. School",
+    year: "2020",
+    course: "",
+    percent: "82.5"
+  },
+  {
+    schoolName: "KA Hr. Sec. School",
+    year: "2018",
+    course: "",
+    percent: "78"
+  }]
 
-               <div className="flex">
-                  <p className="ml-2 mt-[93px] text-white text-xs font-hero-font">2018</p>
-                  <div className="ml-2 mt-[100px] border-t w-[100px] border-white"></div>
-                  <div className="edu">
-                    <p className="font-hero-font text-lg text-white">KA Hr. Sec. School<br/><span className="text-sm text-white font-hero-font">SSLC</span></p>
-                    <p className="text-sm font-hero-font text-white">Percenage-78</p>
-                  </div>
-               </div>
-           </div>
-      </section>
-    </>
+  return <>
+    <section className="mt-10" id="edu">
+      <div className="md:px-20 my-5 mx-5">
+        <p className="text-4xl border-b-2 border-white w-[165px] font-bold font-hero-font bc">Education</p>
+      </div>
+      <div className="flex flex-col mx-20 md:mx-28 mt-10 h-[450px] border-l">
+        {education.map((e, index) => (
+          <div key={index} className="flex">
+            <p className="ml-2 mt-[93px] text-white text-xs font-hero-font">{e.year}</p>
+            <div className="ml-2 mt-[100px] border-t w-[100px] border-white"></div>
+            <div className="edu">
+              <p className="font-hero-font text-lg text-white">{e.schoolName}<br /><span className="text-sm text-white font-hero-font">{e.course}</span></p>
+              <p className="text-sm font-hero-font text-white">Percenage-{e.percent}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  </>
 }
+
+export default Education;
